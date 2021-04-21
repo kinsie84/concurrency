@@ -1,4 +1,4 @@
-package com.kinsella.bean;
+package com.kinsella.rest;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

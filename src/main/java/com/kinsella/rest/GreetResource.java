@@ -1,9 +1,9 @@
-package com.kinsella.bean;
+package com.kinsella.rest;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
-@Path("greetUser")
+@Path("greet")
 public class GreetResource {
 
     @GET
