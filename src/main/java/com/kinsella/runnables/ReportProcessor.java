@@ -26,6 +26,7 @@ public class ReportProcessor implements Callable<Boolean> {
 
     @Override
     public Boolean call() throws Exception {
+        System.out.println(Thread.currentThread().getName() + " : generating report");
         boolean reportGenerated = false;
         List<BankAccountTransaction> transactions = bankAccountDao.getTransactionsForAccount(bankAccount);
         File file = new File("/Users/pete/Projects/concurrency/out/reports/" + bankAccount.getAccNumber() + "_tx_report.txt");
