@@ -1,2 +1,6 @@
-com/kinsella/rest/GreetResource.class
+com/kinsella/runnables/ReportProcessor.class
+com/kinsella/bean/BankAccount.class
 com/kinsella/rest/JAXRSConfiguration.class
+com/kinsella/rest/ReportsResource.class
+com/kinsella/bean/BankAccountTransaction.class
+com/kinsella/dao/BankAccountDao.class

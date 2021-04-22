@@ -1,0 +1,4 @@
+Account Number: 1104Transaction Type: creditTransaction ID: 7Transaction Date: 2012-07-06Transaction Amount: 85000.0
+Account Number: 1104Transaction Type: debitTransaction ID: 8Transaction Date: 2015-02-03Transaction Amount: 9000.0
+Account Number: 1104Transaction Type: debitTransaction ID: 14Transaction Date: 2012-12-30Transaction Amount: 3400.0
+Account Number: 1104Transaction Type: debitTransaction ID: 18Transaction Date: 2018-08-08Transaction Amount: 400.0

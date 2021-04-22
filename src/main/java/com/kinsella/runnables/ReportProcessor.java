@@ -15,8 +15,8 @@ import java.util.logging.Logger;
 
 public class ReportProcessor implements Callable<Boolean> {
 
-    private BankAccount bankAccount;
-    private BankAccountDao bankAccountDao;
+    private final BankAccount bankAccount;
+    private final BankAccountDao bankAccountDao;
 
 
     public ReportProcessor(BankAccount bankAccount, BankAccountDao bankAccountDao) {
@@ -26,23 +26,22 @@ public class ReportProcessor implements Callable<Boolean> {
 
     @Override
     public Boolean call() throws Exception {
+        boolean reportGenerated = false;
         List<BankAccountTransaction> transactions = bankAccountDao.getTransactionsForAccount(bankAccount);
-        File file = new File("out/reports/" + bankAccount.getAccNumber() + "_tx_report.txt");
-        transactions.forEach(transaction -> {
-                    try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
-                        writer.write("Account Number: " + transaction.getAccNumber());
-                        writer.write("Transaction Type: " + transaction.getTxType());
-                        writer.write("Transaction ID: " + transaction.getTxId());
-                        writer.write("Transaction Date: " + transaction.getTxDate());
-                        writer.write("Transaction Amount: " + transaction.getAmount());
-                        writer.newLine();
-                        writer.flush();
-                    } catch (IOException e) {
-                        Logger.getLogger(ReportProcessor.class.getName()).log(Level.SEVERE, null, e);
-                    }
-                }
-        );
+        File file = new File("/Users/pete/Projects/concurrency/out/reports/" + bankAccount.getAccNumber() + "_tx_report.txt");
+        try (final BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
+            for (BankAccountTransaction transaction : transactions) {
 
-        return true;
+                writer.write("Account Number: " + transaction.getAccNumber());
+                writer.write("Transaction Type: " + transaction.getTxType());
+                writer.write("Transaction ID: " + transaction.getTxId());
+                writer.write("Transaction Date: " + transaction.getTxDate());
+                writer.write("Transaction Amount: " + transaction.getAmount());
+                writer.newLine();
+            }
+            writer.flush();
+        }
+        reportGenerated = true;
+        return reportGenerated;
     }
 }

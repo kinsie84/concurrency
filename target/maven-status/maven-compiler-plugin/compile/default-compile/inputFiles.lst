@@ -1,2 +1,6 @@
-/Users/pete/Projects/concurrency/src/main/java/com/kinsella/rest/GreetResource.java
+/Users/pete/Projects/concurrency/src/main/java/com/kinsella/rest/ReportsResource.java
+/Users/pete/Projects/concurrency/src/main/java/com/kinsella/dao/BankAccountDao.java
+/Users/pete/Projects/concurrency/src/main/java/com/kinsella/bean/BankAccountTransaction.java
+/Users/pete/Projects/concurrency/src/main/java/com/kinsella/runnables/ReportProcessor.java
 /Users/pete/Projects/concurrency/src/main/java/com/kinsella/rest/JAXRSConfiguration.java
+/Users/pete/Projects/concurrency/src/main/java/com/kinsella/bean/BankAccount.java

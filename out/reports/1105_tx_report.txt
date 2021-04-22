@@ -1,0 +1,6 @@
+Account Number: 1105Transaction Type: creditTransaction ID: 9Transaction Date: 2010-09-29Transaction Amount: 125000.0
+Account Number: 1105Transaction Type: debitTransaction ID: 10Transaction Date: 2012-12-30Transaction Amount: 3500.0
+Account Number: 1105Transaction Type: debitTransaction ID: 11Transaction Date: 2012-12-30Transaction Amount: 2000.0
+Account Number: 1105Transaction Type: debitTransaction ID: 15Transaction Date: 2018-08-03Transaction Amount: 250.0
+Account Number: 1105Transaction Type: debitTransaction ID: 16Transaction Date: 2018-08-08Transaction Amount: 250.0
+Account Number: 1105Transaction Type: debitTransaction ID: 17Transaction Date: 2018-08-08Transaction Amount: 250.0

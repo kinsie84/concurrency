@@ -1,0 +1,2 @@
+Account Number: 1102Transaction Type: creditTransaction ID: 3Transaction Date: 1999-08-15Transaction Amount: 700000.0
+Account Number: 1102Transaction Type: debitTransaction ID: 4Transaction Date: 2017-07-17Transaction Amount: 7800.0
