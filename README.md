@@ -1,5 +1,5 @@
 # concurrency project
-JAXRS restful api service using ManagedExecutorService for concurrent processing
+JAXRS restful api service using ManagedExecutorService & ManagedScheduledExecutorService for concurrent processing
 
 # database
 MySQL 8.0.21
